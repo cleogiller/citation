@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Texte au clic</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+   
+    <title>OCitation 12</title>
+
 <style>
-    body {
-        margin:0;
-        height:100vh;
-        background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        font-family:'Baloo 2', cursive;
-        cursor:pointer;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .text-center {
-        text-align:center;
-        opacity:0;
-        transition: opacity 0.8s ease;
-    }
+        body {
+            font-family: 'Fjalla One', sans-serif;
+            background: linear-gradient(135deg, #c594fa, #2575fc);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
 
-    .text-center.visible {
-        opacity:1;
-    }
+        h1 {
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
 
-    h1 {
-        font-size:3rem;
-        color:#fff;
-        margin-bottom:20px;
-    }
-
-    p {
-        font-size:1.2rem;
-        color:#fff;
-    }
-</style>
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        
+    </style>
 </head>
 <body>
-    <div class="text-center" id="text">
-        <h1>Bienvenue !</h1>
-        <p>Le texte est apparu grâce à ton clic 😄</p>
+    <h1>Seuls les actes font l'affaires</h1>
+    <p>Niro</p>        
     </div>
-
-    <script>
-        const text = document.getElementById('text');
-
-        // Au premier clic, afficher le texte
-        document.addEventListener('click', () => {
-            text.classList.add('visible');
-        }, { once: true }); // "once: true" garantit que ça se déclenche une seule fois
-    </script>
 </body>
 </html>

@@ -1,98 +1,51 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>One Page Fun Interactif</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html, body { height:100%; font-family:'Baloo 2', cursive; overflow:hidden; }
+	
+	<title>Citation 10</title>
+	<style>
+	
+	/* typo */
+	body {
+		font-family: 'Bebas Neue', sans-serif;
+	}
 
-    body {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        background: linear-gradient(135deg, #FA709A, #FFD93D);
-        background-size: 400% 400%;
-        animation: gradientShift 20s ease infinite;
-        position:relative;
-        padding:20px;
-        cursor: none;
-    }
+	h1 {
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 8vw;
+		letter-spacing: -0.02em;
+		font-style: normal;
+	}
+	
+	/* couleurs */
+	body {
+		background-color: rgb(59, 6, 6);
+		color: rgb(255, 255, 255);
+	}
+	
+	h1 {
+		color: rgb(255, 255, 255);
+	}
 
-    /* Bloc central */
-    .text-center {
-        position:relative;
-        z-index:10;
-        background: rgba(255,255,255,0.1);
-        padding:40px 60px;
-        border-radius:20px;
-        backdrop-filter:blur(15px);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-        animation: pulseBlock 4s ease-in-out infinite;
-    }
+	/* mise en page */
+	body {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 
-    h1 { 
-        font-size:4rem; color:#b5062f;
-        text-shadow:2px 2px 10px rgba(0,0,0,0.3);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+	h1 {
+		max-width: 18ch;
+		text-align: center;
+	}
 
-    p { 
-        font-size:1.5rem;
-        color:#fff;
-        margin-top:20px;
-        max-width:600px;
-    }
-
-    /* Lumières interactives */
-    .light {
-        position:absolute;
-        width:20px;
-        height:20px;
-        background:white;
-        border-radius:50%;
-        pointer-events:none;
-        opacity:0.7;
-        mix-blend-mode:screen;
-        animation: lightFade 0.5s forwards;
-    }
-
-    
-</style>
+	</style>
+	
 </head>
 <body>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-
-    <div class="text-center">
-        <h1>Bienvenue !</h1>
-        <p>Bloc central animé avec formes flottantes qui suivent la souris et lumières interactives pour un effet moderne et dynamique.</p>
-    </div>
-
-    <script>
-        // Faire suivre les formes à la souris
-        const shapes = document.querySelectorAll('.shape');
-        document.addEventListener('mousemove', e=>{
-            const x = e.clientX / window.innerWidth - 0.5;
-            const y = e.clientY / window.innerHeight - 0.5;
-            shapes.forEach((shape,i)=>{
-                const moveFactor = (i+1)*20;
-                shape.style.transform = `translate(${x*moveFactor}px, ${y*moveFactor}px) rotate(${i*60}deg)`;
-            });
-
-            // Créer lumière
-            const light = document.createElement('div');
-            light.className = 'light';
-            light.style.left = `${e.clientX}px`;
-            light.style.top = `${e.clientY}px`;
-            document.body.appendChild(light);
-            setTimeout(()=>light.remove(), 500);
-        });
-    </script>
+	<h1>Je voulais juste qu'on m'aime un peu</h1>
+	<p>LUIDJI</p>
 </body>
 </html>

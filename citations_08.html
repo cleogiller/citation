@@ -1,133 +1,51 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Page Fun</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+	
+	<title>Citation 8</title>
+	<style>
+	
+	/* typo */
+	body {
+		font-family: 'Playfair Display', serif;
+	}
 
-        html, body {
-            height: 100%;
-            font-family: 'Baloo 2', cursive;
-            overflow: hidden;
-        }
+	h1 {
+		font-family: 'Playfair Display', serif;
+		font-size: 8vw;
+		letter-spacing: -0.02em;
+		font-style: normal;
+	}
+	
+	/* couleurs */
+	body {
+		background-color: rgb(122, 93, 221);
+		color: rgb(0, 0, 0);
+	}
+	
+	h1 {
+		color: rgb(0, 0, 0);
+	}
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(135deg, #FFDEE9, #B5FFFC, #FA709A);
-            background-size: 400% 400%;
-            animation: gradientShift 20s ease infinite;
-            position: relative;
-            padding: 20px;
-        }
+	/* mise en page */
+	body {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 
-        /* Les formes flottantes */
-        .shape {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: floatShape 15s infinite;
-        }
+	h1 {
+		max-width: 15ch;
+		text-align: center;
+	}
 
-        .shape:nth-child(1) {
-            width: 150px;
-            height: 150px;
-            background: #ff003c;
-            top: 10%;
-            left: 15%;
-            animation-delay: 0s;
-        }
-        .shape:nth-child(2) {
-            width: 200px;
-            height: 200px;
-            background: #ffcc00;
-            top: 20%;
-            left: 70%;
-            animation-delay: 5s;
-        }
-        .shape:nth-child(3) {
-            width: 120px;
-            height: 120px;
-            background: #00ff22;
-            top: 40%;
-            left: 40%;
-            animation-delay: 6s;
-        }
-        .shape:nth-child(4) {
-            width: 180px;
-            height: 180px;
-            background: #006aff;
-            top: 75%;
-            left: 20%;
-            animation-delay: 9s;
-        }
-
-        /* Bloc central du texte */
-        .text-center {
-            position: relative;
-            z-index: 10;
-            background: rgba(255, 255, 255, 0.1); /* léger fond translucide */
-            padding: 40px 60px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            font-size: 4rem;
-            color: #fff;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-            animation: pulse 2s infinite;
-        }
-
-        p {
-            font-size: 1.5rem;
-            color: #fff;
-            margin-top: 20px;
-            max-width: 600px;
-        }
-
-		/* visuel */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        @keyframes floatShape {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(180deg); }
-            100% { transform: translateY(0px) rotate(360deg); }
-        }
-
-    </style>
+	</style>
+	
 </head>
 <body>
-    <!-- Formes flottantes -->
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-
-    <!-- Bloc central pour le texte -->
-    <div class="text-center">
-        <h1>ça flotte !</h1>
-        <p>je sais pas quoi marquer</p>
-    </div>
+	<h1>Quand le rêve est trop long, le réveil est brutal</h1>
+	<p>Ninho</p>
 </body>
 </html>
